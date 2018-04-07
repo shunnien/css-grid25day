@@ -56,12 +56,21 @@
             grid-template-columns: repeat(auto-fill, 100px);
             grid-auto-rows: 100px;
         }
-        
+
         .item {
             overflow: hidden;
         }
+
         .item.v2 {
             grid-row: span 2;
+        }
+
+        .item.v3 {
+            grid-row: span 3;
+        }
+
+        .item.v4 {
+            grid-row: span 4;
         }
 
         .overlay {
@@ -108,10 +117,12 @@
         }
 
         function randomNumber(limit) {
-            return Math.floor(Math.random() * limit) +1;
+            return Math.floor(Math.random() * limit) + 1;
         }
 
-        const digits = Array.from({ length: 50}, () => [randomNumber(4),randomNumber(4)]);
+        const digits = Array.from({
+            length: 50
+        }, () => [randomNumber(4), randomNumber(4)]);
         //console.log(digits);
 
         const html = digits.map(generateHTML).join('');
