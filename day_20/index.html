@@ -67,7 +67,7 @@
 
         .item img {
             grid-column: 1/-1;
-            grid-auto-rows: 1/-1;
+            grid-row: 1/-1;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -83,6 +83,7 @@
             /* padding: 10px; */
             display: grid;
             justify-items: center;
+            align-items: center;
             transition: 0.2s;
             transform: translateY(100%);
         }
@@ -141,13 +142,13 @@
             justify-items: center;
         }
 
-        .overlay figure {
+        /* .overlay figure {
             background: white;
             width: 700px;
             padding: 20px;
-        }
+        } */
 
-        .overlay-linner {
+        .overlay-inner {
             background: white;
             width: 700px;
             padding: 20px;
@@ -207,7 +208,7 @@
             [1, 1],
             [1, 1],
             [1, 1],
-            [1, 1]
+            [1, 1],
             [1, 1],
             [1, 1],
             [1, 1],
