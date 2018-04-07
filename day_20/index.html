@@ -93,10 +93,10 @@
             color: white;
             text-transform: uppercase;
             background: rgba(0, 0, 0, 0.7);
-            padding:  5px;
+            padding: 5px;
         }
 
-        .item:hover .item__overlay{
+        .item:hover .item__overlay {
             transform: translateY(0);
         }
 
@@ -176,11 +176,13 @@
             const src = e.currentTarget.querySelector('img').src;
             // console.log(src);
             overlayImage.src = src;
-        }
-
-        function open() {
             overlay.classList.add('open');
         }
+
+        // function open() {
+        //     overlay.classList.add('open');
+        // }
+
         function close() {
             overlay.classList.remove('open');
         }
