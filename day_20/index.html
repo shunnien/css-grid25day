@@ -171,6 +171,10 @@
             return Math.floor(Math.random() * limit) + 1;
         }
 
+        function handleClick(e) {
+            console.log(e.currentTarget);
+        }
+
         const digits = Array.from({
             length: 50
         }, () => [randomNumber(4), randomNumber(4)]).concat([
