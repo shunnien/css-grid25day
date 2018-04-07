@@ -172,7 +172,10 @@
         }
 
         function handleClick(e) {
-            console.log(e.currentTarget);
+            // console.log(e.currentTarget);
+            const src = e.currentTarget.querySelector('img').src;
+            // console.log(src);
+            overlayImage.src = src;
         }
 
         const digits = Array.from({
