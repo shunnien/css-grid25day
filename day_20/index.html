@@ -198,6 +198,10 @@
         const html = digits.map(generateHTML).join('');
         //console.log(html);
         gallery.innerHTML = html;
+
+        const items = document.querySelectorAll('.item');
+
+        items.forEach(item => item.addEventListener('click', handleClick));
     </script>
 </body>
 
