@@ -20,11 +20,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
 }
 
-.codepen{
+.codepen {
     display: grid;
     grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh;
 }
 
 .codepen >* {
     border: 1px solid black;
+}
+
+.code {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
